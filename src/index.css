@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+:root{
+    --gsc-note-width: 350px;
+    --gsc-note-height: 350px;
+}
+
+.nota-container{
+    display: grid;
+    grid-template-columns: repeat(3, var(--gsc-note-width));
+    grid-template-rows: auto 300px var( --gsc-note-height);
+    grid-auto-rows: var( --gsc-note-height);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: "Rubik", sans-serif;
+}
+
+.nota-container__head h1,
+.nota-container__head h3{
+    font-weight: 400;
+}
